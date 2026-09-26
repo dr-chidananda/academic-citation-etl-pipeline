@@ -36,10 +36,10 @@
   <div class="subtitle">Source: OpenAlex works API &middot; Query: "applied artificial intelligence" &middot; Store: DuckDB (/home/runner/work/academic-citation-etl-pipeline/academic-citation-etl-pipeline/db/openalex.duckdb)</div>
 
   <div class="cards">
-    <div class="card"><div class="value">580</div><div class="label">Works loaded</div></div>
-    <div class="card"><div class="value">3,351</div><div class="label">Distinct authors</div></div>
-    <div class="card"><div class="value">341,049</div><div class="label">Total citations</div></div>
-    <div class="card"><div class="value">588.0</div><div class="label">Avg. citations / work</div></div>
+    <div class="card"><div class="value">581</div><div class="label">Works loaded</div></div>
+    <div class="card"><div class="value">3,354</div><div class="label">Distinct authors</div></div>
+    <div class="card"><div class="value">342,079</div><div class="label">Total citations</div></div>
+    <div class="card"><div class="value">588.8</div><div class="label">Avg. citations / work</div></div>
     <div class="card"><div class="value">95%</div><div class="label">Pipeline success rate (last 20)</div></div>
   </div>
 
@@ -60,11 +60,11 @@
   <tbody>
     <tr>
       <td>Computer science</td>
-      <td>246</td>
+      <td>247</td>
     </tr>
     <tr>
       <td>Artificial intelligence</td>
-      <td>168</td>
+      <td>169</td>
     </tr>
     <tr>
       <td>Medicine</td>
@@ -161,7 +161,7 @@
     <tr>
       <td>Machine Learning: Algorithms, Real-World Applications and Research Directions</td>
       <td>2021</td>
-      <td>5420</td>
+      <td>5422</td>
       <td>SN Computer Science</td>
       <td>Computer science, Artificial intelligence, Machine learning</td>
     </tr>
@@ -196,14 +196,14 @@
     <tr>
       <td>The role of artificial intelligence in achieving the Sustainable Development Goals</td>
       <td>2020</td>
-      <td>3217</td>
+      <td>3219</td>
       <td>Nature Communications</td>
       <td>Accountability, Transparency (behavior), Sustainable development</td>
     </tr>
     <tr>
       <td>Revolutionizing healthcare: the role of artificial intelligence in clinical practice</td>
       <td>2023</td>
-      <td>3125</td>
+      <td>3130</td>
       <td>BMC Medical Education</td>
       <td>Health care, MEDLINE, Applications of artificial intelligence</td>
     </tr>
@@ -217,7 +217,7 @@
     <tr>
       <td>How artificial intelligence will change the future of marketing</td>
       <td>2019</td>
-      <td>2737</td>
+      <td>2740</td>
       <td>Journal of the Academy of Marketing Science</td>
       <td>Extant taxon, Task (project management), Computer science</td>
     </tr>
@@ -238,7 +238,7 @@
     <tr>
       <td>Artificial Intelligence and Management: The Automation–Augmentation Paradox</td>
       <td>2021</td>
-      <td>2479</td>
+      <td>2486</td>
       <td>Academy of Management Review</td>
       <td>Automation, Task (project management), Interdependence</td>
     </tr>
@@ -337,6 +337,17 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>00dc1a53a220</td>
+      <td>2026-09-25T10:45:39.116133+00:00</td>
+      <td>success</td>
+      <td>dashboard</td>
+      <td>6.38</td>
+      <td>500</td>
+      <td>500</td>
+      <td>3083</td>
+      <td>NaN</td>
+    </tr>
     <tr>
       <td>c61e2b209fd4</td>
       <td>2026-09-24T10:42:35.743323+00:00</td>
@@ -546,17 +557,6 @@
       <td>3120</td>
       <td>NaN</td>
     </tr>
-    <tr>
-      <td>befdddecd823</td>
-      <td>2026-09-05T09:36:39.567542+00:00</td>
-      <td>success</td>
-      <td>dashboard</td>
-      <td>4.30</td>
-      <td>500</td>
-      <td>500</td>
-      <td>3108</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
   </div>
@@ -568,7 +568,7 @@ new Chart(document.getElementById('yearChart'), {
   type: 'bar',
   data: {
     labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-    datasets: [{ label: 'Works', data: [43, 77, 128, 96, 91, 95, 38, 12], backgroundColor: '#3b6fd6' }]
+    datasets: [{ label: 'Works', data: [43, 77, 129, 96, 91, 95, 38, 12], backgroundColor: '#3b6fd6' }]
   },
   options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
 });
