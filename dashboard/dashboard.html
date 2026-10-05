@@ -36,10 +36,10 @@
   <div class="subtitle">Source: OpenAlex works API &middot; Query: "applied artificial intelligence" &middot; Store: DuckDB (/home/runner/work/academic-citation-etl-pipeline/academic-citation-etl-pipeline/db/openalex.duckdb)</div>
 
   <div class="cards">
-    <div class="card"><div class="value">954</div><div class="label">Works loaded</div></div>
-    <div class="card"><div class="value">4,224</div><div class="label">Distinct authors</div></div>
-    <div class="card"><div class="value">346,492</div><div class="label">Total citations</div></div>
-    <div class="card"><div class="value">363.2</div><div class="label">Avg. citations / work</div></div>
+    <div class="card"><div class="value">956</div><div class="label">Works loaded</div></div>
+    <div class="card"><div class="value">4,228</div><div class="label">Distinct authors</div></div>
+    <div class="card"><div class="value">346,495</div><div class="label">Total citations</div></div>
+    <div class="card"><div class="value">362.4</div><div class="label">Avg. citations / work</div></div>
     <div class="card"><div class="value">90%</div><div class="label">Pipeline success rate (last 20)</div></div>
   </div>
 
@@ -60,11 +60,11 @@
   <tbody>
     <tr>
       <td>Computer science</td>
-      <td>465</td>
+      <td>466</td>
     </tr>
     <tr>
       <td>Artificial intelligence</td>
-      <td>304</td>
+      <td>306</td>
     </tr>
     <tr>
       <td>Medicine</td>
@@ -100,23 +100,23 @@
     </tr>
     <tr>
       <td>Machine learning</td>
-      <td>22</td>
+      <td>23</td>
     </tr>
     <tr>
       <td>Big data</td>
       <td>22</td>
     </tr>
     <tr>
-      <td>Process (computing)</td>
-      <td>20</td>
-    </tr>
-    <tr>
       <td>Applications of artificial intelligence</td>
       <td>20</td>
     </tr>
     <tr>
+      <td>Process (computing)</td>
+      <td>20</td>
+    </tr>
+    <tr>
       <td>Artificial neural network</td>
-      <td>17</td>
+      <td>18</td>
     </tr>
   </tbody>
 </table>
@@ -256,11 +256,11 @@
   </thead>
   <tbody>
     <tr>
-      <td>IEEE Access</td>
+      <td>Lecture notes in networks and systems</td>
       <td>13</td>
     </tr>
     <tr>
-      <td>Lecture notes in networks and systems</td>
+      <td>IEEE Access</td>
       <td>13</td>
     </tr>
     <tr>
@@ -276,15 +276,15 @@
       <td>9</td>
     </tr>
     <tr>
-      <td>Computers and Education Artificial Intelligence</td>
-      <td>9</td>
-    </tr>
-    <tr>
       <td>CRC Press eBooks</td>
       <td>9</td>
     </tr>
     <tr>
       <td>Elsevier eBooks</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Computers and Education Artificial Intelligence</td>
       <td>9</td>
     </tr>
     <tr>
@@ -296,11 +296,11 @@
       <td>8</td>
     </tr>
     <tr>
-      <td>Sustainability</td>
+      <td>Applied Sciences</td>
       <td>8</td>
     </tr>
     <tr>
-      <td>Applied Sciences</td>
+      <td>Sustainability</td>
       <td>8</td>
     </tr>
     <tr>
@@ -337,6 +337,17 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>74b0342029c3</td>
+      <td>2026-10-04T11:28:43.250249+00:00</td>
+      <td>success</td>
+      <td>dashboard</td>
+      <td>3.49</td>
+      <td>500</td>
+      <td>500</td>
+      <td>1643</td>
+      <td>NaN</td>
+    </tr>
     <tr>
       <td>3710fed77bab</td>
       <td>2026-10-03T10:46:31.172758+00:00</td>
@@ -546,17 +557,6 @@
       <td>3087</td>
       <td>NaN</td>
     </tr>
-    <tr>
-      <td>82c882ac9c24</td>
-      <td>2026-09-14T11:10:17.764636+00:00</td>
-      <td>success</td>
-      <td>dashboard</td>
-      <td>5.45</td>
-      <td>500</td>
-      <td>500</td>
-      <td>3087</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
   </div>
@@ -568,7 +568,7 @@ new Chart(document.getElementById('yearChart'), {
   type: 'bar',
   data: {
     labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-    datasets: [{ label: 'Works', data: [52, 107, 151, 138, 135, 158, 113, 100], backgroundColor: '#3b6fd6' }]
+    datasets: [{ label: 'Works', data: [52, 107, 151, 138, 135, 159, 113, 101], backgroundColor: '#3b6fd6' }]
   },
   options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
 });
