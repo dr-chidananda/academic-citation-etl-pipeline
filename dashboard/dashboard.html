@@ -36,10 +36,10 @@
   <div class="subtitle">Source: OpenAlex works API &middot; Query: "applied artificial intelligence" &middot; Store: DuckDB (/home/runner/work/academic-citation-etl-pipeline/academic-citation-etl-pipeline/db/openalex.duckdb)</div>
 
   <div class="cards">
-    <div class="card"><div class="value">956</div><div class="label">Works loaded</div></div>
-    <div class="card"><div class="value">4,228</div><div class="label">Distinct authors</div></div>
-    <div class="card"><div class="value">346,495</div><div class="label">Total citations</div></div>
-    <div class="card"><div class="value">362.4</div><div class="label">Avg. citations / work</div></div>
+    <div class="card"><div class="value">957</div><div class="label">Works loaded</div></div>
+    <div class="card"><div class="value">4,231</div><div class="label">Distinct authors</div></div>
+    <div class="card"><div class="value">346,524</div><div class="label">Total citations</div></div>
+    <div class="card"><div class="value">362.1</div><div class="label">Avg. citations / work</div></div>
     <div class="card"><div class="value">90%</div><div class="label">Pipeline success rate (last 20)</div></div>
   </div>
 
@@ -64,7 +64,7 @@
     </tr>
     <tr>
       <td>Artificial intelligence</td>
-      <td>306</td>
+      <td>307</td>
     </tr>
     <tr>
       <td>Medicine</td>
@@ -95,11 +95,11 @@
       <td>24</td>
     </tr>
     <tr>
-      <td>Data science</td>
-      <td>23</td>
+      <td>Machine learning</td>
+      <td>24</td>
     </tr>
     <tr>
-      <td>Machine learning</td>
+      <td>Data science</td>
       <td>23</td>
     </tr>
     <tr>
@@ -107,11 +107,11 @@
       <td>22</td>
     </tr>
     <tr>
-      <td>Applications of artificial intelligence</td>
+      <td>Process (computing)</td>
       <td>20</td>
     </tr>
     <tr>
-      <td>Process (computing)</td>
+      <td>Applications of artificial intelligence</td>
       <td>20</td>
     </tr>
     <tr>
@@ -272,15 +272,11 @@
       <td>10</td>
     </tr>
     <tr>
-      <td>npj Digital Medicine</td>
-      <td>9</td>
-    </tr>
-    <tr>
       <td>CRC Press eBooks</td>
       <td>9</td>
     </tr>
     <tr>
-      <td>Elsevier eBooks</td>
+      <td>npj Digital Medicine</td>
       <td>9</td>
     </tr>
     <tr>
@@ -288,15 +284,11 @@
       <td>9</td>
     </tr>
     <tr>
-      <td>Nature Medicine</td>
-      <td>8</td>
+      <td>Elsevier eBooks</td>
+      <td>9</td>
     </tr>
     <tr>
       <td>Springer eBooks</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Applied Sciences</td>
       <td>8</td>
     </tr>
     <tr>
@@ -304,15 +296,23 @@
       <td>8</td>
     </tr>
     <tr>
-      <td>Journal of Medical Internet Research</td>
-      <td>7</td>
+      <td>Applied Sciences</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Nature Medicine</td>
+      <td>8</td>
     </tr>
     <tr>
       <td>International Journal of Educational Technology in Higher Education</td>
       <td>7</td>
     </tr>
     <tr>
-      <td>Advances in computational intelligence and robotics book series</td>
+      <td>Journal of Medical Internet Research</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>AI &amp; Society</td>
       <td>6</td>
     </tr>
   </tbody>
@@ -337,6 +337,17 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>3fd0d40489d4</td>
+      <td>2026-10-05T12:56:03.448567+00:00</td>
+      <td>success</td>
+      <td>dashboard</td>
+      <td>5.35</td>
+      <td>500</td>
+      <td>500</td>
+      <td>1644</td>
+      <td>NaN</td>
+    </tr>
     <tr>
       <td>74b0342029c3</td>
       <td>2026-10-04T11:28:43.250249+00:00</td>
@@ -546,17 +557,6 @@
       <td>3087</td>
       <td>NaN</td>
     </tr>
-    <tr>
-      <td>b3e535b0c3e3</td>
-      <td>2026-09-15T10:38:30.329446+00:00</td>
-      <td>success</td>
-      <td>dashboard</td>
-      <td>5.12</td>
-      <td>500</td>
-      <td>500</td>
-      <td>3087</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
   </div>
@@ -568,7 +568,7 @@ new Chart(document.getElementById('yearChart'), {
   type: 'bar',
   data: {
     labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-    datasets: [{ label: 'Works', data: [52, 107, 151, 138, 135, 159, 113, 101], backgroundColor: '#3b6fd6' }]
+    datasets: [{ label: 'Works', data: [52, 107, 151, 138, 136, 159, 113, 101], backgroundColor: '#3b6fd6' }]
   },
   options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
 });
