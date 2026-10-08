@@ -36,10 +36,10 @@
   <div class="subtitle">Source: OpenAlex works API &middot; Query: "applied artificial intelligence" &middot; Store: DuckDB (/home/runner/work/academic-citation-etl-pipeline/academic-citation-etl-pipeline/db/openalex.duckdb)</div>
 
   <div class="cards">
-    <div class="card"><div class="value">961</div><div class="label">Works loaded</div></div>
-    <div class="card"><div class="value">4,239</div><div class="label">Distinct authors</div></div>
-    <div class="card"><div class="value">346,532</div><div class="label">Total citations</div></div>
-    <div class="card"><div class="value">360.6</div><div class="label">Avg. citations / work</div></div>
+    <div class="card"><div class="value">964</div><div class="label">Works loaded</div></div>
+    <div class="card"><div class="value">4,246</div><div class="label">Distinct authors</div></div>
+    <div class="card"><div class="value">346,536</div><div class="label">Total citations</div></div>
+    <div class="card"><div class="value">359.5</div><div class="label">Avg. citations / work</div></div>
     <div class="card"><div class="value">90%</div><div class="label">Pipeline success rate (last 20)</div></div>
   </div>
 
@@ -60,11 +60,11 @@
   <tbody>
     <tr>
       <td>Computer science</td>
-      <td>469</td>
+      <td>472</td>
     </tr>
     <tr>
       <td>Artificial intelligence</td>
-      <td>310</td>
+      <td>313</td>
     </tr>
     <tr>
       <td>Medicine</td>
@@ -79,11 +79,11 @@
       <td>36</td>
     </tr>
     <tr>
-      <td>Context (archaeology)</td>
+      <td>Engineering</td>
       <td>32</td>
     </tr>
     <tr>
-      <td>Engineering</td>
+      <td>Context (archaeology)</td>
       <td>32</td>
     </tr>
     <tr>
@@ -91,11 +91,11 @@
       <td>30</td>
     </tr>
     <tr>
-      <td>Machine learning</td>
+      <td>Knowledge management</td>
       <td>24</td>
     </tr>
     <tr>
-      <td>Knowledge management</td>
+      <td>Machine learning</td>
       <td>24</td>
     </tr>
     <tr>
@@ -272,11 +272,11 @@
       <td>10</td>
     </tr>
     <tr>
-      <td>CRC Press eBooks</td>
+      <td>Computers and Education Artificial Intelligence</td>
       <td>9</td>
     </tr>
     <tr>
-      <td>Elsevier eBooks</td>
+      <td>CRC Press eBooks</td>
       <td>9</td>
     </tr>
     <tr>
@@ -284,15 +284,11 @@
       <td>9</td>
     </tr>
     <tr>
-      <td>Computers and Education Artificial Intelligence</td>
+      <td>Elsevier eBooks</td>
       <td>9</td>
     </tr>
     <tr>
       <td>Applied Sciences</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Springer eBooks</td>
       <td>8</td>
     </tr>
     <tr>
@@ -304,6 +300,10 @@
       <td>8</td>
     </tr>
     <tr>
+      <td>Springer eBooks</td>
+      <td>8</td>
+    </tr>
+    <tr>
       <td>Journal of Medical Internet Research</td>
       <td>7</td>
     </tr>
@@ -312,7 +312,7 @@
       <td>7</td>
     </tr>
     <tr>
-      <td>AI &amp; Society</td>
+      <td>Advances in computational intelligence and robotics book series</td>
       <td>6</td>
     </tr>
   </tbody>
@@ -337,6 +337,17 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>8fc1669419e3</td>
+      <td>2026-10-07T12:15:14.433885+00:00</td>
+      <td>success</td>
+      <td>dashboard</td>
+      <td>6.11</td>
+      <td>500</td>
+      <td>500</td>
+      <td>1691</td>
+      <td>NaN</td>
+    </tr>
     <tr>
       <td>4bf3cd5f0946</td>
       <td>2026-10-06T12:22:21.399823+00:00</td>
@@ -546,17 +557,6 @@
       <td>3089</td>
       <td>NaN</td>
     </tr>
-    <tr>
-      <td>ca62312b7ba3</td>
-      <td>2026-09-17T10:36:19.521086+00:00</td>
-      <td>success</td>
-      <td>dashboard</td>
-      <td>5.20</td>
-      <td>500</td>
-      <td>500</td>
-      <td>3086</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
   </div>
@@ -568,7 +568,7 @@ new Chart(document.getElementById('yearChart'), {
   type: 'bar',
   data: {
     labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-    datasets: [{ label: 'Works', data: [52, 108, 151, 139, 136, 159, 113, 103], backgroundColor: '#3b6fd6' }]
+    datasets: [{ label: 'Works', data: [52, 108, 152, 139, 136, 159, 114, 104], backgroundColor: '#3b6fd6' }]
   },
   options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
 });
