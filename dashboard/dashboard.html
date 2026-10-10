@@ -36,10 +36,10 @@
   <div class="subtitle">Source: OpenAlex works API &middot; Query: "applied artificial intelligence" &middot; Store: DuckDB (/home/runner/work/academic-citation-etl-pipeline/academic-citation-etl-pipeline/db/openalex.duckdb)</div>
 
   <div class="cards">
-    <div class="card"><div class="value">965</div><div class="label">Works loaded</div></div>
-    <div class="card"><div class="value">4,246</div><div class="label">Distinct authors</div></div>
-    <div class="card"><div class="value">346,456</div><div class="label">Total citations</div></div>
-    <div class="card"><div class="value">359.0</div><div class="label">Avg. citations / work</div></div>
+    <div class="card"><div class="value">966</div><div class="label">Works loaded</div></div>
+    <div class="card"><div class="value">4,247</div><div class="label">Distinct authors</div></div>
+    <div class="card"><div class="value">346,468</div><div class="label">Total citations</div></div>
+    <div class="card"><div class="value">358.7</div><div class="label">Avg. citations / work</div></div>
     <div class="card"><div class="value">90%</div><div class="label">Pipeline success rate (last 20)</div></div>
   </div>
 
@@ -64,7 +64,7 @@
     </tr>
     <tr>
       <td>Artificial intelligence</td>
-      <td>313</td>
+      <td>314</td>
     </tr>
     <tr>
       <td>Medicine</td>
@@ -79,11 +79,11 @@
       <td>36</td>
     </tr>
     <tr>
-      <td>Context (archaeology)</td>
-      <td>32</td>
+      <td>Engineering</td>
+      <td>33</td>
     </tr>
     <tr>
-      <td>Engineering</td>
+      <td>Context (archaeology)</td>
       <td>32</td>
     </tr>
     <tr>
@@ -91,11 +91,11 @@
       <td>30</td>
     </tr>
     <tr>
-      <td>Machine learning</td>
+      <td>Knowledge management</td>
       <td>24</td>
     </tr>
     <tr>
-      <td>Knowledge management</td>
+      <td>Machine learning</td>
       <td>24</td>
     </tr>
     <tr>
@@ -107,11 +107,11 @@
       <td>22</td>
     </tr>
     <tr>
-      <td>Process (computing)</td>
+      <td>Applications of artificial intelligence</td>
       <td>20</td>
     </tr>
     <tr>
-      <td>Applications of artificial intelligence</td>
+      <td>Process (computing)</td>
       <td>20</td>
     </tr>
     <tr>
@@ -256,11 +256,11 @@
   </thead>
   <tbody>
     <tr>
-      <td>IEEE Access</td>
+      <td>Lecture notes in networks and systems</td>
       <td>13</td>
     </tr>
     <tr>
-      <td>Lecture notes in networks and systems</td>
+      <td>IEEE Access</td>
       <td>13</td>
     </tr>
     <tr>
@@ -272,10 +272,6 @@
       <td>10</td>
     </tr>
     <tr>
-      <td>npj Digital Medicine</td>
-      <td>9</td>
-    </tr>
-    <tr>
       <td>CRC Press eBooks</td>
       <td>9</td>
     </tr>
@@ -284,19 +280,15 @@
       <td>9</td>
     </tr>
     <tr>
+      <td>npj Digital Medicine</td>
+      <td>9</td>
+    </tr>
+    <tr>
       <td>Computers and Education Artificial Intelligence</td>
       <td>9</td>
     </tr>
     <tr>
-      <td>Springer eBooks</td>
-      <td>8</td>
-    </tr>
-    <tr>
       <td>Sustainability</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Applied Sciences</td>
       <td>8</td>
     </tr>
     <tr>
@@ -304,11 +296,19 @@
       <td>8</td>
     </tr>
     <tr>
-      <td>International Journal of Educational Technology in Higher Education</td>
-      <td>7</td>
+      <td>Applied Sciences</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Springer eBooks</td>
+      <td>8</td>
     </tr>
     <tr>
       <td>Journal of Medical Internet Research</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>International Journal of Educational Technology in Higher Education</td>
       <td>7</td>
     </tr>
     <tr>
@@ -337,6 +337,17 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>4e8603541ad4</td>
+      <td>2026-10-09T12:14:35.841581+00:00</td>
+      <td>success</td>
+      <td>dashboard</td>
+      <td>3.76</td>
+      <td>500</td>
+      <td>500</td>
+      <td>1651</td>
+      <td>NaN</td>
+    </tr>
     <tr>
       <td>f58e90702e31</td>
       <td>2026-10-08T12:24:52.662770+00:00</td>
@@ -546,17 +557,6 @@
       <td>3106</td>
       <td>NaN</td>
     </tr>
-    <tr>
-      <td>35094292d80d</td>
-      <td>2026-09-19T09:53:28.566680+00:00</td>
-      <td>success</td>
-      <td>dashboard</td>
-      <td>4.46</td>
-      <td>500</td>
-      <td>500</td>
-      <td>3081</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
   </div>
@@ -568,7 +568,7 @@ new Chart(document.getElementById('yearChart'), {
   type: 'bar',
   data: {
     labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-    datasets: [{ label: 'Works', data: [52, 108, 152, 139, 136, 159, 114, 105], backgroundColor: '#3b6fd6' }]
+    datasets: [{ label: 'Works', data: [53, 108, 152, 139, 136, 159, 114, 105], backgroundColor: '#3b6fd6' }]
   },
   options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
 });
